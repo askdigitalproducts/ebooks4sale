@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<title>Page 3</title>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DFF2EB;
+}
+
+
+
+/* nav bar start */
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: #B9E5E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    margin: -5;
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+
+/* topnav start */
+.topnav {
+display: flex;
+overflow: hidden;
+margin-right: 50px;
+
+
+}
+
+.topnav a {
+  
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  
+}
+
+.nav .topnav a:hover {
+  background-color: white;
+  border-radius: 32px;
+  padding: 14px 16px;
+}
+
+.nav .topnav a.active {
+  color: #333;
+  background-color: white;
+  border-radius: 32px;
+ 
+}
+
+/* topnav end */
+
+/* topnav2 start*/
+
+.topnav2 {
+    display: none;
+}
+
+
+/* topnav2 end*/
+
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .logo {
+        margin-left: 70px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin-right: 60px;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0px;
+       
+    }
+
+    .topnav {
+       display: none;
+        
+    }
+
+   
+/* topnav2 start*/
+
+.topnav2 {
+        height: 0;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #F3F3E0;
+        margin-left: 0px;
+        overflow: hidden;
+        display: block;
+        
+
+
+}
+
+.topnav2 a {
+  
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: 0;      
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  
+}
+
+.topnav2 a:hover {
+  background-color: #ddd;
+  border-radius: 32px;
+  padding: 14px 16px;
+  color: black;
+}
+
+.topnav2 a.active {
+  color: #333;
+  background-color: white;
+  border-radius: 32px;
+ 
+}
+
+.topnav2.active {
+        height: 380px;
+    }
+
+/* topnav2 end*/
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    .hamburger {
+        margin-right: 50px;
+    }
+
+}
+
+
+/* logo start */
+
+.log1 {
+    /* background-color: #4A628A; */
+    color: white;
+}
+
+
+/* logo end*/
+
+/* nav bar end */
+
+
+/* card */
+
+.page {
+  margin-top: 50px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 0px;
+}
+
+.card{
+    width: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    margin-bottom: 60px;
+   
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+/* previous 16px */
+.card-content{
+    padding: 0;
+}
+
+.card-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+   margin-top: 8px;
+}
+
+/* previous price */
+
+
+.card-content h3.price{
+    font-size: 22px;
+    margin-bottom: 3px;
+   margin-top: 8px;
+   color: red;
+}
+
+.card-content h3.previous price{
+  display: inline-block;
+}
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 38px;
+    background-color: gold;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.card-content .btn:hover{
+  background-color: #DF2E38;
+  color: white;
+}
+
+.header {
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ border-color: #04AA6D;
+ margin-top: 20px;
+}
+
+.card img {
+  height: 50%;
+  width: 50%;
+}
+
+.card {
+  margin: 30px;
+}
+
+
+#previous{
+  color: black;  
+  font-weight: normal;
+  font-size: 15px;
+}
+
+/* title */
+ 
+
+
+
+
+.title {
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-color: #04AA6D;
+ 
+  color: #FFABAB;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+
+
+
+/* pagination style */
+
+.center {
+  text-align: center;
+ 
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  background-color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  font-size: 20px;
+}
+
+.pagination a.active {
+  background-color: #4A628A;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* etitle */
+
+a.etitle{
+  text-decoration: none;
+  color: black;
+}
+
+a.etitle:hover{
+  color: #E8751A;
+}
+
+h3.wtitle{
+  width: 70%;
+}
+
+/* ebook's list */
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+  
+}
+
+.search .master{
+  display: flex;
+}
+
+a.elist {
+  /* text-decoration: none; */
+  color: black;
+  font-style: italic;
+  
+}
+
+</style>
+</head>
+
+<div class="nav">
+  <div class="logo">
+          <h2><span class="log1">eBooks</span><span class="log2">4sale</span></h2>
+         
+  </div>
+  <div class="hamburger" onclick="myFunction()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+
+  </div>
+
+
+  <div class="topnav" id="myTopnav">
+    <a href="./index.html" >Home</a>
+    <a href="./page 1.html" class="active">Ebooks</a>
+    <a href="./promo.html" >Promo</a>
+    <a href="./about.html" >About Us</a>
+    <a href="./contact.html" >Contact Us</a>
+    <a href="./faq.html" >FAQ</a>
+   
+  </div>
+  </div>
+
+  <div class="topnav2" id="myTopnav2">
+      <a href="./index.html" >Home</a>
+      <a href="./page 1.html" class="active">Ebooks</a>
+      <a href="./promo.html" >Promo</a>
+      <a href="./about.html" >About Us</a>
+      <a href="./contact.html" >Contact Us</a>
+      <a href="./faq.html" >FAQ</a>
+    </div>
+
+    <div class="search">
+      <div></div>
+    
+      <div class="master">
+        <div><a href="./ebookslist.html" class="elist"><p>Ebook's List</p></a></div>
+        <div><a href="./ebookslist.html"><i class="fa fa-book" style="font-size:36px;color: #4A628A;"></i></a></div>
+      
+      </div>
+    </div>
+
+ 
+
+
+
+  <div class="page">
+  <div class="card-container">
+    <div class="card">
+        <a href="./dc19.html"><img src="./image/limitless.jpg"></a>
+        <div class="card-content">
+            <a href="./dc19.html" class="etitle"><h3>Limitless</h3></a>
+            <p>By Jim Kwik</p>
+            <h3 class="price"><span>&#36;</span>6.5 <s id="previous">&#36;12.99</s></h3>
+            <a href="./co19.html" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="./dc20.html"><img src="./image/nomorenice.jpg"></a>
+        <div class="card-content">
+            <a href="./dc20.html" class="etitle"><h3>No More Mr. Nice Guy</h3></a>
+            <p>By Dr. Robert A. Glover</p>
+            <h3 class="price"><span>&#36;</span>5 <s id="previous">&#36;9.99</s></h3>
+            <a href="./co20.html" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <a href="./dc21.html"><img src="./image/primary.png"></a>
+        <div class="card-content">
+            <a href="./dc21.html" class="etitle"><h3>Primary Greatness</h3></a>
+            <p>By Stephen R. Covey</p>
+            <h3 class="price"><span>&#36;</span>7 <s id="previous">&#36;13.99</s></h3>
+            <a href="./co21.html" class="btn">Buy Now</a>
+        </div>
+
+
+    </div>
+
+   <!--    new list -->
+
+<div class="card-container">
+  <div class="card">
+      <a href="./dc22.html"><img src="./image/difficult.jpg"></a>
+      <div class="card-content">
+          <a href="./dc22.html" class="etitle"><h3>Difficult Conversations</h3></a>
+          <p>By Douglas Stone, Bruce Patton</p>
+          <h3 class="price"><span>&#36;</span>7 <s id="previous">&#36;13.99</s></h3>
+          <a href="./co22.html" class="btn">Buy Now</a>
+      </div>
+  </div>
+
+  <div class="card">
+      <a href="./dc23.html"><img src="./image/8020.jpg"></a>
+      <div class="card-content">
+          <a href="./dc23.html" class="etitle"><h3>The 80/20 Principle </h3></a>
+          <p>By Richard Koch</p>
+          <h3 class="price"><span>&#36;</span>6.5 <s id="previous">&#36;12.99</s></h3>
+          <a href="./co23.html" class="btn">Buy Now</a>
+      </div>
+  </div>
+
+
+  <div class="card">
+    <a href="./dc09.html"><img src="./image/mindsetnew.jpg"></a>
+    <div class="card-content">
+        <a href="./dc09.html" class="etitle"><h3>Mindset</h3></a>
+        <p>By Carol S. Dweck</p>
+        <h3 class="price"><span>&#36;</span>7 <s id="previous">&#36;13.99</s></h3>
+        <a href="./co09.html" class="btn">Buy Now</a>
+    </div>
+
+</div>
+
+<!-- new div -->
+
+<div class="card-container"></div>
+  <div class="card">
+      <a href="./dc25.html"><img src="./image/5second.jpg"></a>
+      <div class="card-content">
+          <a href="./dc25.html" class="etitle"><h3>The 5 Second Rule</h3></a>
+          <p>By Mel Robbins</p>
+          <h3 class="price"><span>&#36;</span>5 <s id="previous">&#36;9.99</s></h3>
+          <a href="./co25.html" class="btn">Buy Now</a>
+      </div>
+  </div>
+
+  <div class="card">
+      <a href="./dc26.html"><img src="./image/psychomoney.jpg"></a>
+      <div class="card-content">
+          <a href="./dc26.html" class="etitle"><h3>The Psychology of Money</h3></a>
+          <p>By Morgan Housel</p>
+          <h3 class="price"><span>&#36;</span>5 <s id="previous">&#36;9.99</s></h3>
+          <a href="./co26.html" class="btn">Buy Now</a>
+      </div>
+  </div>
+
+  <div class="card">
+      <a href="./dc27.html"><img src="./image/thinkmonk.jpg"></a>
+      <div class="card-content">
+          <a href="./dc27.html" class="etitle"><h3>Think Like A Monk</h3></a>
+          <p>By Jay Shetty</p>
+          <h3 class="price"><span>&#36;</span>7 <s id="previous">&#36;13.99</s></h3>
+          <a href="./co27.html" class="btn">Buy Now</a>
+      </div>
+
+
+ </div>
+
+ <!-- pagination -->
+
+ <div class="center"></div>
+  <div class="pagination">
+  <a href="./page2.html">&laquo;</a>
+  <a href="./page 1.html" >1</a>
+  <a href="./page2.html" >2</a>
+  <a href="./page3.html" class="active">3</a>
+  <a href="./page4.html">4</a>
+  <a href="./page5.html">5</a>
+  
+  <a href="./page4.html">&raquo;</a>
+  </div>
+</div>
+<br>
+<br>
+
+
+
+
+<script>
+
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function() {
+      topNav = document.querySelector(".topnav2");
+      topNav.classList.toggle("active");
+  }
+
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+
+
+
+
+
+
+
+</body>
+</html>
